@@ -1,0 +1,40 @@
+﻿@MinimalAPI_HostAddress = http://localhost:5018
+
+GET {{MinimalAPI_HostAddress}}/person_items
+
+###
+
+POST {{MinimalAPI_HostAddress}}/person_items
+Content-Type: application/json
+Accept: application/json
+
+{
+  "FirstName":"Konrad",
+  "LastName":"Kowalski",
+  "BirthDate":"2001-02-19",
+  "Address":"Koszalin ul.Dobra 14/15c"
+}
+
+###
+
+GET {{MinimalAPI_HostAddress}}/person_items/1
+
+
+###
+
+PUT {{MinimalAPI_HostAddress}}/person_items/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "FirstName":"Kacper",
+  "LastName":"Marciniak",
+  "BirthDate":"1999-03-11",
+  "Address":"Warszawa ul.Prosta 13/1232a"
+}
+
+###
+
+DELETE {{MinimalAPI_HostAddress}}/person_items/1
+
+###
